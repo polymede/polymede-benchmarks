@@ -81,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="benchmarks/0.0.0.1/index.html"><strong aria-hidden="true">1.</strong> polymede-0.0.0.1</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="benchmarks/0.0.0.1/Base64Pad.html"><strong aria-hidden="true">1.1.</strong> Base64Pad</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="benchmarks/0.0.0.1/Base64Pad-decode/index.html"><strong aria-hidden="true">1.1.1.</strong> Base64Pad-decode</a></li><li class="chapter-item expanded "><a href="benchmarks/0.0.0.1/Base64Pad-encode/index.html"><strong aria-hidden="true">1.1.2.</strong> Base64Pad-encode</a></li><li class="chapter-item expanded "><a href="benchmarks/0.0.0.1/Base64Pad-misc/index.html"><strong aria-hidden="true">1.1.3.</strong> Base64Pad-misc</a></li><li class="chapter-item expanded "><a href="benchmarks/0.0.0.1/Base64Pad-hack/index.html"><strong aria-hidden="true">1.1.4.</strong> Base64Pad-hack</a></li></ol></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="benchmarks/0.0.0.1/index.html"><strong aria-hidden="true">1.</strong> polymede-0.0.0.1</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="benchmarks/0.0.0.1/Base64Pad.html"><strong aria-hidden="true">1.1.</strong> Base64Pad</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="benchmarks/0.0.0.1/Base64Pad-decode/index.html"><strong aria-hidden="true">1.1.1.</strong> Base64Pad-decode</a></li><li class="chapter-item expanded "><a href="benchmarks/0.0.0.1/Base64Pad-encode/index.html"><strong aria-hidden="true">1.1.2.</strong> Base64Pad-encode</a></li><li class="chapter-item expanded "><a href="benchmarks/0.0.0.1/Base64Pad-hack/index.html"><strong aria-hidden="true">1.1.3.</strong> Base64Pad-hack</a></li><li class="chapter-item expanded "><a href="benchmarks/0.0.0.1/Base64Pad-misc/index.html"><strong aria-hidden="true">1.1.4.</strong> Base64Pad-misc</a></li></ol></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -142,97 +142,198 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="polymede-0001"><a class="header" href="#polymede-0001">polymede-0.0.0.1</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="base64pad-benchmarks"><a class="header" href="#base64pad-benchmarks">Base64Pad Benchmarks</a></h1>
+                        <h1 id="polymede"><a class="header" href="#polymede">polymede</a></h1>
+<h2 id="0001---2023-01-30"><a class="header" href="#0001---2023-01-30"><a href="https://github.com/cdornan/polymede-benchmarks">0.0.0.1</a> - 2023-01-30</a></h2>
+<h3 id="added"><a class="header" href="#added">Added</a></h3>
 <ul>
-<li><a href="benchmarks/0.0.0.1/Base64Pad-encode" title="encode benchmarks for the **Base64Pad** codec">Base64Pad-encode</a></li>
-<li><a href="benchmarks/0.0.0.1/Base64Pad-misc" title="Base64Pad misc benchmarks">Base64Pad-misc</a></li>
-<li><a href="benchmarks/0.0.0.1/Base64Pad-hack" title="Base64Pad hack benchmarks">Base64Pad-hack</a></li>
-<li><a href="benchmarks/0.0.0.1/Base64Pad-decode" title="decode benchmarks for the **Base64Pad** codec">Base64Pad-decode</a></li>
+<li>
+<p><em>Set everything up</em> (<a href="https://github.com/cdornan">@cdornan</a>, 2023-01-30)</p>
+<p>a complete implementation of RFC 4648 codecs</p>
+<p>MVP implemenation of remaining codecs</p>
+<p>testing and benchmarks for all codecs</p>
+<p>fairly complete documentation documentations for all codecs with examples</p>
+</li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="base64pad-decode"><a class="header" href="#base64pad-decode">Base64Pad-decode</a></h1>
-<p>This folder contains the decode benchmarks for the <strong>Base64Pad</strong> codec compiled with GHC 9.4.4 (aarch64), on the 
+<div style="break-before: page; page-break-before: always;"></div><h1 id="base64pad"><a class="header" href="#base64pad">Base64Pad</a></h1>
+<p>This folder contains the benchmark results for the Base64Pad compiled with GHC 9.4.4 (aarch64), on the 
 <strong>marvin</strong> reference node running macOS 13.2 (22D49).</p>
 <h2 id="key-results"><a class="header" href="#key-results">Key Results</a></h2>
 <ul>
-<li>decodes to 1,000,000 bytes in <strong>1.936 ms</strong> using the <strong>ByteLazy</strong> pipeline</li>
+<li>encodes 1,000,000 bytes in <strong>457.2 μs</strong> using the <strong>ByteLazy</strong> pipeline</li>
+<li>decodes to 1,000,000 bytes in <strong>1.894 ms</strong> using the <strong>ByteLazy</strong> pipeline</li>
 </ul>
 <h2 id="results-summary"><a class="header" href="#results-summary">Results Summary</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>benchmark</th><th>duration</th></tr></thead><tbody>
-<tr><td>decode-1MB-Base64Pad-Text</td><td>1.933 ms</td></tr>
-<tr><td>decode-1MB-Base64Pad-TextLazy</td><td>1.925 ms</td></tr>
-<tr><td>decode-1MB-Base64Pad-TextShort</td><td>1.955 ms</td></tr>
-<tr><td>decode-1MB-Base64Pad-Byte</td><td>1.917 ms</td></tr>
-<tr><td>decode-1MB-Base64Pad-ByteLazy</td><td>1.936 ms</td></tr>
+<tr><td>encode-1MB-Base64Pad-Text</td><td>542.4 μs</td></tr>
+<tr><td>encode-1MB-Base64Pad-TextLazy</td><td>497.9 μs</td></tr>
+<tr><td>encode-1MB-Base64Pad-TextShort</td><td>513.5 μs</td></tr>
+<tr><td>encode-1MB-Base64Pad-Byte</td><td>479.6 μs</td></tr>
+<tr><td>encode-1MB-Base64Pad-ByteLazy</td><td>457.2 μs</td></tr>
+<tr><td>encode-1MB-Base64Pad-ByteShort</td><td>509.8 μs</td></tr>
+<tr><td>decode-1MB-Base64Pad-Text</td><td>1.922 ms</td></tr>
+<tr><td>decode-1MB-Base64Pad-TextLazy</td><td>1.922 ms</td></tr>
+<tr><td>decode-1MB-Base64Pad-TextShort</td><td>1.948 ms</td></tr>
+<tr><td>decode-1MB-Base64Pad-Byte</td><td>1.925 ms</td></tr>
+<tr><td>decode-1MB-Base64Pad-ByteLazy</td><td>1.894 ms</td></tr>
+<tr><td>decode-1MB-Base64Pad-ByteShort</td><td>1.950 ms</td></tr>
+<tr><td>decode-1MB-N#Base64Pad-Byte</td><td>1.911 ms</td></tr>
+<tr><td>decode-1MB-X#Base64Pad-Byte</td><td>1.972 ms</td></tr>
+</tbody></table>
+</div>
+<h2 id="release-constraints"><a class="header" href="#release-constraints">Release Constraints</a></h2>
+<p>The following benchmarks are constrained to run inside the following bounds for each release:</p>
+<div class="table-wrapper"><table><thead><tr><th>benchmark</th><th>nodes</th><th>current</th><th>bound</th></tr></thead><tbody>
+<tr><td><strong>encode-1MB-Base64Pad-ByteLazy</strong></td><td><strong>marvin</strong> zaphod trillian</td><td>457.2 μs</td><td><strong>485.0 μs</strong></td></tr>
+<tr><td>encode-1MB-Base64Pad-ByteLazy</td><td>dat</td><td>457.2 μs</td><td>352.0 μs</td></tr>
+</tbody></table>
+</div>
+<h2 id="notes"><a class="header" href="#notes">Notes</a></h2>
+<p>The following observations concerning these results have been logged:</p>
+<h3 id="unreleased"><a class="header" href="#unreleased"><a href="https://github.com/cdornan/polymede-benchmarks">Unreleased</a></a></h3>
+<h4 id="base64pad-decode"><a class="header" href="#base64pad-decode">Base64Pad-decode</a></h4>
+<ul>
+<li>
+<p><em>decode times appear to be somewhat greater than expected</em> (<a href="https://github.com/cdornan">@cdornan</a>, 2023-02-01)</p>
+<p>This needs further investigation.</p>
+</li>
+</ul>
+<h3 id="0001"><a class="header" href="#0001"><a href="https://github.com/cdornan/polymede-benchmarks">0.0.0.1</a></a></h3>
+<h4 id="base64pad-encode"><a class="header" href="#base64pad-encode">Base64Pad-encode</a></h4>
+<ul>
+<li>
+<p><em>lazy encode pipelines slightly better -- for now</em> (<a href="https://github.com/cdornan">@cdornan</a>, 2023-02-01)</p>
+<p>This should only be significant on small inputs.</p>
+<p>We hope to fix this soon in a coming release.</p>
+</li>
+</ul>
+<h2 id="breakdown"><a class="header" href="#breakdown">Breakdown</a></h2>
+<p>See the following individual reports for a breakdown with methodological notes, etc.</p>
+<ul>
+<li><a href="benchmarks/0.0.0.1/./Base64Pad-decode/index.html">Base64Pad-decode</a></li>
+<li><a href="benchmarks/0.0.0.1/./Base64Pad-encode/index.html">Base64Pad-encode</a></li>
+<li><a href="benchmarks/0.0.0.1/./Base64Pad-hack/index.html">Base64Pad-hack</a></li>
+<li><a href="benchmarks/0.0.0.1/./Base64Pad-misc/index.html">Base64Pad-misc</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="base64pad-decode-1"><a class="header" href="#base64pad-decode-1">Base64Pad-decode</a></h1>
+<p>This folder contains the decode benchmarks for the <strong>Base64Pad</strong> codec compiled with GHC 9.4.4 (aarch64), on the 
+<strong>marvin</strong> reference node running macOS 13.2 (22D49).</p>
+<h2 id="key-results-1"><a class="header" href="#key-results-1">Key Results</a></h2>
+<ul>
+<li>decodes to 1,000,000 bytes in <strong>1.894 ms</strong> using the <strong>ByteLazy</strong> pipeline</li>
+</ul>
+<h2 id="results-summary-1"><a class="header" href="#results-summary-1">Results Summary</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>benchmark</th><th>duration</th></tr></thead><tbody>
+<tr><td>decode-1MB-Base64Pad-Text</td><td>1.922 ms</td></tr>
+<tr><td>decode-1MB-Base64Pad-TextLazy</td><td>1.922 ms</td></tr>
+<tr><td>decode-1MB-Base64Pad-TextShort</td><td>1.948 ms</td></tr>
+<tr><td>decode-1MB-Base64Pad-Byte</td><td>1.895 ms</td></tr>
+<tr><td>decode-1MB-Base64Pad-ByteLazy</td><td>1.894 ms</td></tr>
 <tr><td>decode-1MB-Base64Pad-ByteShort</td><td>1.950 ms</td></tr>
 </tbody></table>
 </div>
 <p>See <a href="benchmarks/0.0.0.1/Base64Pad-decode/criterion.html">criterion.html</a> for the full breakdown with detailed methodological notes.</p>
-<h2 id="release-constraints"><a class="header" href="#release-constraints">Release Constraints</a></h2>
-<p>The following benchmarks are constrained to run inside the following bounds for each release:</p>
-<ul>
-<li>there are no release constraints for this codec</li>
-</ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="base64pad-encode"><a class="header" href="#base64pad-encode">Base64Pad-encode</a></h1>
-<p>This folder contains the encode benchmarks for the <strong>Base64Pad</strong> codec compiled with GHC 9.4.4 (aarch64), on the 
-<strong>marvin</strong> reference node running macOS 13.2 (22D49).</p>
-<h2 id="key-results-1"><a class="header" href="#key-results-1">Key Results</a></h2>
-<ul>
-<li>encodes 1,000,000 bytes in <strong>454.1 μs</strong> using the <strong>ByteLazy</strong> pipeline</li>
-</ul>
-<h2 id="results-summary-1"><a class="header" href="#results-summary-1">Results Summary</a></h2>
-<div class="table-wrapper"><table><thead><tr><th>benchmark</th><th>duration</th></tr></thead><tbody>
-<tr><td>encode-1MB-Base64Pad-Text</td><td>525.2 μs</td></tr>
-<tr><td>encode-1MB-Base64Pad-TextLazy</td><td>502.2 μs</td></tr>
-<tr><td>encode-1MB-Base64Pad-TextShort</td><td>511.3 μs</td></tr>
-<tr><td>encode-1MB-Base64Pad-Byte</td><td>485.6 μs</td></tr>
-<tr><td>encode-1MB-Base64Pad-ByteLazy</td><td>454.1 μs</td></tr>
-<tr><td>encode-1MB-Base64Pad-ByteShort</td><td>511.9 μs</td></tr>
-</tbody></table>
-</div>
-<p>See <a href="benchmarks/0.0.0.1/Base64Pad-encode/criterion.html">criterion.html</a> for the full breakdown with detailed methodological notes.</p>
 <h2 id="release-constraints-1"><a class="header" href="#release-constraints-1">Release Constraints</a></h2>
 <p>The following benchmarks are constrained to run inside the following bounds for each release:</p>
-<div class="table-wrapper"><table><thead><tr><th>benchmark</th><th>nodes</th><th>current</th><th>bound</th></tr></thead><tbody>
-<tr><td><strong>encode-1MB-Base64Pad-ByteLazy</strong></td><td><strong>marvin</strong> zaphod trillian</td><td>454.1 μs</td><td><strong>485.0 μs</strong></td></tr>
-<tr><td>encode-1MB-Base64Pad-ByteLazy</td><td>dat</td><td>454.1 μs</td><td>352.0 μs</td></tr>
-</tbody></table>
-</div><div style="break-before: page; page-break-before: always;"></div><h1 id="base64pad-misc"><a class="header" href="#base64pad-misc">Base64Pad-misc</a></h1>
-<p>This folder contains the Base64Pad misc benchmarks compiled with GHC 9.4.4 (aarch64), on the 
+<ul>
+<li>there are no release constraints for this codec/report</li>
+</ul>
+<h2 id="notes-1"><a class="header" href="#notes-1">Notes</a></h2>
+<p>The following observations concerning these results have been logged:</p>
+<h3 id="unreleased-1"><a class="header" href="#unreleased-1"><a href="https://github.com/cdornan/polymede-benchmarks">Unreleased</a></a></h3>
+<h4 id="base64pad-decode-2"><a class="header" href="#base64pad-decode-2">Base64Pad-decode</a></h4>
+<ul>
+<li>
+<p><em>decode times appear to be somewhat greater than expected</em> (<a href="https://github.com/cdornan">@cdornan</a>, 2023-02-01)</p>
+<p>This needs further investigation.</p>
+</li>
+</ul>
+<p><a href="benchmarks/0.0.0.1/Base64Pad-decode/criterion.html">criterion.html</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="base64pad-encode-1"><a class="header" href="#base64pad-encode-1">Base64Pad-encode</a></h1>
+<p>This folder contains the encode benchmarks for the <strong>Base64Pad</strong> codec compiled with GHC 9.4.4 (aarch64), on the 
 <strong>marvin</strong> reference node running macOS 13.2 (22D49).</p>
 <h2 id="key-results-2"><a class="header" href="#key-results-2">Key Results</a></h2>
 <ul>
-<li>There are no highlighted benchmarks for this codec.</li>
+<li>encodes 1,000,000 bytes in <strong>457.2 μs</strong> using the <strong>ByteLazy</strong> pipeline</li>
 </ul>
 <h2 id="results-summary-2"><a class="header" href="#results-summary-2">Results Summary</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>benchmark</th><th>duration</th></tr></thead><tbody>
-<tr><td>decode-1MB-X#Base64Pad-Byte</td><td>1.910 ms</td></tr>
+<tr><td>encode-1MB-Base64Pad-Text</td><td>542.4 μs</td></tr>
+<tr><td>encode-1MB-Base64Pad-TextLazy</td><td>497.9 μs</td></tr>
+<tr><td>encode-1MB-Base64Pad-TextShort</td><td>513.5 μs</td></tr>
+<tr><td>encode-1MB-Base64Pad-Byte</td><td>479.6 μs</td></tr>
+<tr><td>encode-1MB-Base64Pad-ByteLazy</td><td>457.2 μs</td></tr>
+<tr><td>encode-1MB-Base64Pad-ByteShort</td><td>509.8 μs</td></tr>
 </tbody></table>
 </div>
-<p>See <a href="benchmarks/0.0.0.1/Base64Pad-misc/criterion.html">criterion.html</a> for the full breakdown with detailed methodological notes.</p>
+<p>See <a href="benchmarks/0.0.0.1/Base64Pad-encode/criterion.html">criterion.html</a> for the full breakdown with detailed methodological notes.</p>
 <h2 id="release-constraints-2"><a class="header" href="#release-constraints-2">Release Constraints</a></h2>
 <p>The following benchmarks are constrained to run inside the following bounds for each release:</p>
+<div class="table-wrapper"><table><thead><tr><th>benchmark</th><th>nodes</th><th>current</th><th>bound</th></tr></thead><tbody>
+<tr><td><strong>encode-1MB-Base64Pad-ByteLazy</strong></td><td><strong>marvin</strong> zaphod trillian</td><td>457.2 μs</td><td><strong>485.0 μs</strong></td></tr>
+<tr><td>encode-1MB-Base64Pad-ByteLazy</td><td>dat</td><td>457.2 μs</td><td>352.0 μs</td></tr>
+</tbody></table>
+</div>
+<h2 id="notes-2"><a class="header" href="#notes-2">Notes</a></h2>
+<p>The following observations concerning these results have been logged:</p>
+<h3 id="0001-1"><a class="header" href="#0001-1"><a href="https://github.com/cdornan/polymede-benchmarks">0.0.0.1</a></a></h3>
+<h4 id="base64pad-encode-2"><a class="header" href="#base64pad-encode-2">Base64Pad-encode</a></h4>
 <ul>
-<li>there are no release constraints for this codec</li>
+<li>
+<p><em>lazy encode pipelines slightly better -- for now</em> (<a href="https://github.com/cdornan">@cdornan</a>, 2023-02-01)</p>
+<p>This should only be significant on small inputs.</p>
+<p>We hope to fix this soon in a coming release.</p>
+</li>
 </ul>
+<p><a href="benchmarks/0.0.0.1/Base64Pad-encode/criterion.html">criterion.html</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="base64pad-hack"><a class="header" href="#base64pad-hack">Base64Pad-hack</a></h1>
 <p>This folder contains the Base64Pad hack benchmarks compiled with GHC 9.4.4 (aarch64), on the 
 <strong>marvin</strong> reference node running macOS 13.2 (22D49).</p>
 <h2 id="key-results-3"><a class="header" href="#key-results-3">Key Results</a></h2>
 <ul>
-<li>There are no highlighted benchmarks for this codec.</li>
+<li>There are no highlighted benchmarks.</li>
 </ul>
 <h2 id="results-summary-3"><a class="header" href="#results-summary-3">Results Summary</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>benchmark</th><th>duration</th></tr></thead><tbody>
-<tr><td>decode-1MB-Base64Pad-Byte</td><td>1.929 ms</td></tr>
+<tr><td>decode-1MB-Base64Pad-Byte</td><td>1.925 ms</td></tr>
 </tbody></table>
 </div>
 <p>See <a href="benchmarks/0.0.0.1/Base64Pad-hack/criterion.html">criterion.html</a> for the full breakdown with detailed methodological notes.</p>
 <h2 id="release-constraints-3"><a class="header" href="#release-constraints-3">Release Constraints</a></h2>
 <p>The following benchmarks are constrained to run inside the following bounds for each release:</p>
 <ul>
-<li>there are no release constraints for this codec</li>
+<li>there are no release constraints for this codec/report</li>
 </ul>
+<h2 id="notes-3"><a class="header" href="#notes-3">Notes</a></h2>
+<p>The following observations concerning these results have been logged:</p>
+<ul>
+<li>no notes have been attached to this codec/report</li>
+</ul>
+<p><a href="benchmarks/0.0.0.1/Base64Pad-hack/criterion.html">criterion.html</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="base64pad-misc"><a class="header" href="#base64pad-misc">Base64Pad-misc</a></h1>
+<p>This folder contains the Base64Pad misc benchmarks compiled with GHC 9.4.4 (aarch64), on the 
+<strong>marvin</strong> reference node running macOS 13.2 (22D49).</p>
+<h2 id="key-results-4"><a class="header" href="#key-results-4">Key Results</a></h2>
+<ul>
+<li>There are no highlighted benchmarks.</li>
+</ul>
+<h2 id="results-summary-4"><a class="header" href="#results-summary-4">Results Summary</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>benchmark</th><th>duration</th></tr></thead><tbody>
+<tr><td>decode-1MB-N#Base64Pad-Byte</td><td>1.911 ms</td></tr>
+<tr><td>decode-1MB-X#Base64Pad-Byte</td><td>1.972 ms</td></tr>
+</tbody></table>
+</div>
+<p>See <a href="benchmarks/0.0.0.1/Base64Pad-misc/criterion.html">criterion.html</a> for the full breakdown with detailed methodological notes.</p>
+<h2 id="release-constraints-4"><a class="header" href="#release-constraints-4">Release Constraints</a></h2>
+<p>The following benchmarks are constrained to run inside the following bounds for each release:</p>
+<ul>
+<li>there are no release constraints for this codec/report</li>
+</ul>
+<h2 id="notes-4"><a class="header" href="#notes-4">Notes</a></h2>
+<p>The following observations concerning these results have been logged:</p>
+<ul>
+<li>no notes have been attached to this codec/report</li>
+</ul>
+<p><a href="benchmarks/0.0.0.1/Base64Pad-misc/criterion.html">criterion.html</a></p>
 
                     </main>
 
@@ -251,6 +352,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

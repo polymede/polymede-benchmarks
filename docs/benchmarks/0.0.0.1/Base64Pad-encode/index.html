@@ -80,7 +80,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../../../benchmarks/0.0.0.1/index.html"><strong aria-hidden="true">1.</strong> polymede-0.0.0.1</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../benchmarks/0.0.0.1/Base64Pad.html"><strong aria-hidden="true">1.1.</strong> Base64Pad</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../benchmarks/0.0.0.1/Base64Pad-decode/index.html"><strong aria-hidden="true">1.1.1.</strong> Base64Pad-decode</a></li><li class="chapter-item expanded "><a href="../../../benchmarks/0.0.0.1/Base64Pad-encode/index.html" class="active"><strong aria-hidden="true">1.1.2.</strong> Base64Pad-encode</a></li><li class="chapter-item expanded "><a href="../../../benchmarks/0.0.0.1/Base64Pad-misc/index.html"><strong aria-hidden="true">1.1.3.</strong> Base64Pad-misc</a></li><li class="chapter-item expanded "><a href="../../../benchmarks/0.0.0.1/Base64Pad-hack/index.html"><strong aria-hidden="true">1.1.4.</strong> Base64Pad-hack</a></li></ol></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../../benchmarks/0.0.0.1/index.html"><strong aria-hidden="true">1.</strong> polymede-0.0.0.1</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../benchmarks/0.0.0.1/Base64Pad.html"><strong aria-hidden="true">1.1.</strong> Base64Pad</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../benchmarks/0.0.0.1/Base64Pad-decode/index.html"><strong aria-hidden="true">1.1.1.</strong> Base64Pad-decode</a></li><li class="chapter-item expanded "><a href="../../../benchmarks/0.0.0.1/Base64Pad-encode/index.html" class="active"><strong aria-hidden="true">1.1.2.</strong> Base64Pad-encode</a></li><li class="chapter-item expanded "><a href="../../../benchmarks/0.0.0.1/Base64Pad-hack/index.html"><strong aria-hidden="true">1.1.3.</strong> Base64Pad-hack</a></li><li class="chapter-item expanded "><a href="../../../benchmarks/0.0.0.1/Base64Pad-misc/index.html"><strong aria-hidden="true">1.1.4.</strong> Base64Pad-misc</a></li></ol></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -146,26 +146,39 @@
 <strong>marvin</strong> reference node running macOS 13.2 (22D49).</p>
 <h2 id="key-results"><a class="header" href="#key-results">Key Results</a></h2>
 <ul>
-<li>encodes 1,000,000 bytes in <strong>454.1 μs</strong> using the <strong>ByteLazy</strong> pipeline</li>
+<li>encodes 1,000,000 bytes in <strong>457.2 μs</strong> using the <strong>ByteLazy</strong> pipeline</li>
 </ul>
 <h2 id="results-summary"><a class="header" href="#results-summary">Results Summary</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>benchmark</th><th>duration</th></tr></thead><tbody>
-<tr><td>encode-1MB-Base64Pad-Text</td><td>525.2 μs</td></tr>
-<tr><td>encode-1MB-Base64Pad-TextLazy</td><td>502.2 μs</td></tr>
-<tr><td>encode-1MB-Base64Pad-TextShort</td><td>511.3 μs</td></tr>
-<tr><td>encode-1MB-Base64Pad-Byte</td><td>485.6 μs</td></tr>
-<tr><td>encode-1MB-Base64Pad-ByteLazy</td><td>454.1 μs</td></tr>
-<tr><td>encode-1MB-Base64Pad-ByteShort</td><td>511.9 μs</td></tr>
+<tr><td>encode-1MB-Base64Pad-Text</td><td>542.4 μs</td></tr>
+<tr><td>encode-1MB-Base64Pad-TextLazy</td><td>497.9 μs</td></tr>
+<tr><td>encode-1MB-Base64Pad-TextShort</td><td>513.5 μs</td></tr>
+<tr><td>encode-1MB-Base64Pad-Byte</td><td>479.6 μs</td></tr>
+<tr><td>encode-1MB-Base64Pad-ByteLazy</td><td>457.2 μs</td></tr>
+<tr><td>encode-1MB-Base64Pad-ByteShort</td><td>509.8 μs</td></tr>
 </tbody></table>
 </div>
 <p>See <a href="criterion.html">criterion.html</a> for the full breakdown with detailed methodological notes.</p>
 <h2 id="release-constraints"><a class="header" href="#release-constraints">Release Constraints</a></h2>
 <p>The following benchmarks are constrained to run inside the following bounds for each release:</p>
 <div class="table-wrapper"><table><thead><tr><th>benchmark</th><th>nodes</th><th>current</th><th>bound</th></tr></thead><tbody>
-<tr><td><strong>encode-1MB-Base64Pad-ByteLazy</strong></td><td><strong>marvin</strong> zaphod trillian</td><td>454.1 μs</td><td><strong>485.0 μs</strong></td></tr>
-<tr><td>encode-1MB-Base64Pad-ByteLazy</td><td>dat</td><td>454.1 μs</td><td>352.0 μs</td></tr>
+<tr><td><strong>encode-1MB-Base64Pad-ByteLazy</strong></td><td><strong>marvin</strong> zaphod trillian</td><td>457.2 μs</td><td><strong>485.0 μs</strong></td></tr>
+<tr><td>encode-1MB-Base64Pad-ByteLazy</td><td>dat</td><td>457.2 μs</td><td>352.0 μs</td></tr>
 </tbody></table>
 </div>
+<h2 id="notes"><a class="header" href="#notes">Notes</a></h2>
+<p>The following observations concerning these results have been logged:</p>
+<h3 id="0001"><a class="header" href="#0001"><a href="https://github.com/cdornan/polymede-benchmarks">0.0.0.1</a></a></h3>
+<h4 id="base64pad-encode-1"><a class="header" href="#base64pad-encode-1">Base64Pad-encode</a></h4>
+<ul>
+<li>
+<p><em>lazy encode pipelines slightly better -- for now</em> (<a href="https://github.com/cdornan">@cdornan</a>, 2023-02-01)</p>
+<p>This should only be significant on small inputs.</p>
+<p>We hope to fix this soon in a coming release.</p>
+</li>
+</ul>
+<p><a href="criterion.html">criterion.html</a></p>
+
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
@@ -174,7 +187,7 @@
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next" href="../../../benchmarks/0.0.0.1/Base64Pad-misc/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../../../benchmarks/0.0.0.1/Base64Pad-hack/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -188,13 +201,29 @@
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../../../benchmarks/0.0.0.1/Base64Pad-misc/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../../../benchmarks/0.0.0.1/Base64Pad-hack/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

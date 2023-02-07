@@ -1,6 +1,0 @@
-- [polymede-0.0.0.1](./benchmarks/0.0.0.1/README.md)
-  - [Base64Pad](./benchmarks/0.0.0.1/Base64Pad.md)
-    - [Base64Pad-encode](./benchmarks/0.0.0.1/Base64Pad-encode/README.md)
-    - [Base64Pad-misc](./benchmarks/0.0.0.1/Base64Pad-misc/README.md)
-    - [Base64Pad-hack](./benchmarks/0.0.0.1/Base64Pad-hack/README.md)
-    - [Base64Pad-decode](./benchmarks/0.0.0.1/Base64Pad-decode/README.md)

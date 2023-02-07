@@ -5,20 +5,18 @@ This folder contains the decode benchmarks for the **Base64Pad** codec compiled 
 
 ## Key Results
 
-* decodes to 1,000,000 bytes in **1.936 ms** using the **ByteLazy** pipeline
-
+* decodes to 1,000,000 bytes in **1.894 ms** using the **ByteLazy** pipeline
 
 ## Results Summary
 
 | benchmark                      | duration |
 | ------------------------------ | -------- |
-| decode-1MB-Base64Pad-Text      | 1.933 ms |
-| decode-1MB-Base64Pad-TextLazy  | 1.925 ms |
-| decode-1MB-Base64Pad-TextShort | 1.955 ms |
-| decode-1MB-Base64Pad-Byte      | 1.917 ms |
-| decode-1MB-Base64Pad-ByteLazy  | 1.936 ms |
+| decode-1MB-Base64Pad-Text      | 1.922 ms |
+| decode-1MB-Base64Pad-TextLazy  | 1.922 ms |
+| decode-1MB-Base64Pad-TextShort | 1.948 ms |
+| decode-1MB-Base64Pad-Byte      | 1.895 ms |
+| decode-1MB-Base64Pad-ByteLazy  | 1.894 ms |
 | decode-1MB-Base64Pad-ByteShort | 1.950 ms |
-
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 
@@ -26,4 +24,22 @@ See [criterion.html](criterion.html) for the full breakdown with detailed method
 
 The following benchmarks are constrained to run inside the following bounds for each release:
 
-* there are no release constraints for this codec
+* there are no release constraints for this codec/report
+
+## Notes
+
+The following observations concerning these results have been logged:
+
+### [Unreleased]
+
+#### Base64Pad-decode
+
+* _decode times appear to be somewhat greater than expected_ ([@cdornan], 2023-02-01)
+
+    This needs further investigation.
+
+[Unreleased]: <https://github.com/cdornan/polymede-benchmarks>
+[@cdornan]: <https://github.com/cdornan>
+
+[criterion.html](criterion.html)
+

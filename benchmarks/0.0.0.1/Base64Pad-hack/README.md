@@ -5,16 +5,13 @@ This folder contains the Base64Pad hack benchmarks compiled with GHC 9.4.4 (aarc
 
 ## Key Results
 
-
-* There are no highlighted benchmarks for this codec.
-
+* There are no highlighted benchmarks.
 
 ## Results Summary
 
 | benchmark                 | duration |
 | ------------------------- | -------- |
-| decode-1MB-Base64Pad-Byte | 1.929 ms |
-
+| decode-1MB-Base64Pad-Byte | 1.925 ms |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 
@@ -22,4 +19,12 @@ See [criterion.html](criterion.html) for the full breakdown with detailed method
 
 The following benchmarks are constrained to run inside the following bounds for each release:
 
-* there are no release constraints for this codec
+* there are no release constraints for this codec/report
+
+## Notes
+
+The following observations concerning these results have been logged:
+* no notes have been attached to this codec/report
+
+[criterion.html](criterion.html)
+
