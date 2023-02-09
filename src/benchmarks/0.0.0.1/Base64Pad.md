@@ -5,27 +5,27 @@ This folder contains the benchmark results for the Base64Pad compiled with GHC 9
 
 ## Key Results
 
-* encodes 1,000,000 bytes in **457.2 μs** using the **ByteLazy** pipeline
-* decodes to 1,000,000 bytes in **1.894 ms** using the **ByteLazy** pipeline
+* encodes 1,000,000 bytes in **453.7 μs** using the **ByteLazy** pipeline
+* decodes to 1,000,000 bytes in **1.889 ms** using the **ByteLazy** pipeline
 
 ## Results Summary
 
 | benchmark                      | duration |
 | ------------------------------ | -------- |
-| encode-1MB-Base64Pad-Text      | 542.4 μs |
-| encode-1MB-Base64Pad-TextLazy  | 497.9 μs |
-| encode-1MB-Base64Pad-TextShort | 513.5 μs |
-| encode-1MB-Base64Pad-Byte      | 479.6 μs |
-| encode-1MB-Base64Pad-ByteLazy  | 457.2 μs |
-| encode-1MB-Base64Pad-ByteShort | 509.8 μs |
-| decode-1MB-Base64Pad-Text      | 1.922 ms |
-| decode-1MB-Base64Pad-TextLazy  | 1.922 ms |
-| decode-1MB-Base64Pad-TextShort | 1.948 ms |
-| decode-1MB-Base64Pad-Byte      | 1.925 ms |
-| decode-1MB-Base64Pad-ByteLazy  | 1.894 ms |
-| decode-1MB-Base64Pad-ByteShort | 1.950 ms |
-| decode-1MB-N#Base64Pad-Byte    | 1.911 ms |
-| decode-1MB-X#Base64Pad-Byte    | 1.972 ms |
+| encode-1MB-Base64Pad-Text      | 523.3 μs |
+| encode-1MB-Base64Pad-TextLazy  | 496.3 μs |
+| encode-1MB-Base64Pad-TextShort | 512.7 μs |
+| encode-1MB-Base64Pad-Byte      | 479.2 μs |
+| encode-1MB-Base64Pad-ByteLazy  | 453.7 μs |
+| encode-1MB-Base64Pad-ByteShort | 508.1 μs |
+| decode-1MB-Base64Pad-Text      | 1.919 ms |
+| decode-1MB-Base64Pad-TextLazy  | 1.918 ms |
+| decode-1MB-Base64Pad-TextShort | 1.945 ms |
+| decode-1MB-Base64Pad-Byte      | 1.898 ms |
+| decode-1MB-Base64Pad-ByteLazy  | 1.889 ms |
+| decode-1MB-Base64Pad-ByteShort | 1.944 ms |
+| decode-1MB-N#Base64Pad-Byte    | 1.888 ms |
+| decode-1MB-X#Base64Pad-Byte    | 1.889 ms |
 
 ## Release Constraints
 
@@ -33,8 +33,8 @@ The following benchmarks are constrained to run inside the following bounds for 
 
 | benchmark                         | nodes                      | current  | bound        |
 | --------------------------------- | -------------------------- | -------- | ------------ |
-| **encode-1MB-Base64Pad-ByteLazy** | **marvin** zaphod trillian | 457.2 μs | **485.0 μs** |
-| encode-1MB-Base64Pad-ByteLazy     | dat                        | 457.2 μs | 352.0 μs     |
+| **encode-1MB-Base64Pad-ByteLazy** | **marvin** zaphod trillian | 453.7 μs | **485.0 μs** |
+| encode-1MB-Base64Pad-ByteLazy     | dat                        | 453.7 μs | 352.0 μs     |
 
 ## Notes
 

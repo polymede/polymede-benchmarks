@@ -5,18 +5,18 @@ This folder contains the encode benchmarks for the **Base64Pad** codec compiled 
 
 ## Key Results
 
-* encodes 1,000,000 bytes in **457.2 μs** using the **ByteLazy** pipeline
+* encodes 1,000,000 bytes in **453.7 μs** using the **ByteLazy** pipeline
 
 ## Results Summary
 
 | benchmark                      | duration |
 | ------------------------------ | -------- |
-| encode-1MB-Base64Pad-Text      | 542.4 μs |
-| encode-1MB-Base64Pad-TextLazy  | 497.9 μs |
-| encode-1MB-Base64Pad-TextShort | 513.5 μs |
-| encode-1MB-Base64Pad-Byte      | 479.6 μs |
-| encode-1MB-Base64Pad-ByteLazy  | 457.2 μs |
-| encode-1MB-Base64Pad-ByteShort | 509.8 μs |
+| encode-1MB-Base64Pad-Text      | 523.3 μs |
+| encode-1MB-Base64Pad-TextLazy  | 496.3 μs |
+| encode-1MB-Base64Pad-TextShort | 512.7 μs |
+| encode-1MB-Base64Pad-Byte      | 479.2 μs |
+| encode-1MB-Base64Pad-ByteLazy  | 453.7 μs |
+| encode-1MB-Base64Pad-ByteShort | 508.1 μs |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 
@@ -26,8 +26,8 @@ The following benchmarks are constrained to run inside the following bounds for 
 
 | benchmark                         | nodes                      | current  | bound        |
 | --------------------------------- | -------------------------- | -------- | ------------ |
-| **encode-1MB-Base64Pad-ByteLazy** | **marvin** zaphod trillian | 457.2 μs | **485.0 μs** |
-| encode-1MB-Base64Pad-ByteLazy     | dat                        | 457.2 μs | 352.0 μs     |
+| **encode-1MB-Base64Pad-ByteLazy** | **marvin** zaphod trillian | 453.7 μs | **485.0 μs** |
+| encode-1MB-Base64Pad-ByteLazy     | dat                        | 453.7 μs | 352.0 μs     |
 
 ## Notes
 

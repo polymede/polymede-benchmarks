@@ -11,8 +11,8 @@ This folder contains the Base64Pad misc benchmarks compiled with GHC 9.4.4 (aarc
 
 | benchmark                   | duration |
 | --------------------------- | -------- |
-| decode-1MB-N#Base64Pad-Byte | 1.911 ms |
-| decode-1MB-X#Base64Pad-Byte | 1.972 ms |
+| decode-1MB-N#Base64Pad-Byte | 1.888 ms |
+| decode-1MB-X#Base64Pad-Byte | 1.889 ms |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 

@@ -11,7 +11,7 @@ This folder contains the Base64Pad hack benchmarks compiled with GHC 9.4.4 (aarc
 
 | benchmark                 | duration |
 | ------------------------- | -------- |
-| decode-1MB-Base64Pad-Byte | 1.925 ms |
+| decode-1MB-Base64Pad-Byte | 1.898 ms |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 
