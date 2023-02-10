@@ -31,10 +31,10 @@ This folder contains the benchmark results for the Base64Pad compiled with GHC 9
 
 The following benchmarks are constrained to run inside the following bounds for each release:
 
-| benchmark                         | nodes                      | current  | bound        |
-| --------------------------------- | -------------------------- | -------- | ------------ |
-| **encode-1MB-Base64Pad-ByteLazy** | **marvin** zaphod trillian | 453.7 μs | **485.0 μs** |
-| encode-1MB-Base64Pad-ByteLazy     | dat                        | 453.7 μs | 352.0 μs     |
+| benchmark                         | nodes      | current  | bound        |
+| --------------------------------- | ---------- | -------- | ------------ |
+| **encode-1MB-Base64Pad-ByteLazy** | **marvin** | 453.7 μs | **485.0 μs** |
+| encode-1MB-Base64Pad-ByteLazy     | zaphod     | 453.7 μs | 352.0 μs     |
 
 ## Notes
 
@@ -53,8 +53,6 @@ The following observations concerning these results have been logged:
 #### Base64Pad-encode
 
 * _lazy encode pipelines slightly better -- for now_ ([@cdornan], 2023-02-01)
-
-    This should only be significant on small inputs.
 
     We hope to fix this soon in a coming release.
 
