@@ -9,10 +9,14 @@ This folder contains the Base64UrlPad misc benchmarks compiled with GHC 9.4.4 (a
 
 ## Results Summary
 
-| benchmark                      | duration |
-| ------------------------------ | -------- |
-| decode-1MB-N#Base64UrlPad-Byte | 1.887 ms |
-| decode-1MB-X#Base64UrlPad-Byte | 1.890 ms |
+| benchmark                          | duration |
+| ---------------------------------- | -------- |
+| encode-1MB-N#Base64UrlPad-Byte     | 451.9 μs |
+| encode-1MB-N#Base64UrlPad-ByteLazy | 452.8 μs |
+| encode-1MB-X#Base64UrlPad-Byte     | 479.8 μs |
+| encode-1MB-X#Base64UrlPad-ByteLazy | 452.1 μs |
+| decode-1MB-N#Base64UrlPad-Byte     | 1.898 ms |
+| decode-1MB-N#Base64UrlPad-ByteLazy | 1.897 ms |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 

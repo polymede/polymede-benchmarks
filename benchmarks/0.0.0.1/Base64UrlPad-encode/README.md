@@ -5,18 +5,18 @@ This folder contains the encode benchmarks for the **Base64UrlPad** codec compil
 
 ## Key Results
 
-* encodes 1,000,000 bytes in **453.2 μs** using the **ByteLazy** pipeline
+* encodes 1,000,000 bytes in **451.7 μs** using the **ByteLazy** pipeline
 
 ## Results Summary
 
 | benchmark                         | duration |
 | --------------------------------- | -------- |
-| encode-1MB-Base64UrlPad-Text      | 526.9 μs |
-| encode-1MB-Base64UrlPad-TextLazy  | 500.1 μs |
-| encode-1MB-Base64UrlPad-TextShort | 514.4 μs |
-| encode-1MB-Base64UrlPad-Byte      | 483.9 μs |
-| encode-1MB-Base64UrlPad-ByteLazy  | 453.2 μs |
-| encode-1MB-Base64UrlPad-ByteShort | 509.8 μs |
+| encode-1MB-Base64UrlPad-Text      | 528.6 μs |
+| encode-1MB-Base64UrlPad-TextLazy  | 496.5 μs |
+| encode-1MB-Base64UrlPad-TextShort | 511.6 μs |
+| encode-1MB-Base64UrlPad-Byte      | 480.9 μs |
+| encode-1MB-Base64UrlPad-ByteLazy  | 451.7 μs |
+| encode-1MB-Base64UrlPad-ByteShort | 512.2 μs |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 
@@ -26,8 +26,8 @@ The following benchmarks are constrained to run inside the following bounds for 
 
 | benchmark                            | nodes      | current  | bound        |
 | ------------------------------------ | ---------- | -------- | ------------ |
-| **encode-1MB-Base64UrlPad-ByteLazy** | **marvin** | 453.2 μs | **485.0 μs** |
-| encode-1MB-Base64UrlPad-ByteLazy     | zaphod     | 453.2 μs | 352.0 μs     |
+| **encode-1MB-Base64UrlPad-ByteLazy** | **marvin** | 451.7 μs | **485.0 μs** |
+| encode-1MB-Base64UrlPad-ByteLazy     | zaphod     | 451.7 μs | 352.0 μs     |
 
 ## Notes
 

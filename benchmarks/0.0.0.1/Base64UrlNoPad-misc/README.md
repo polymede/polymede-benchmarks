@@ -9,10 +9,14 @@ This folder contains the Base64UrlNoPad misc benchmarks compiled with GHC 9.4.4 
 
 ## Results Summary
 
-| benchmark                        | duration |
-| -------------------------------- | -------- |
-| decode-1MB-N#Base64UrlNoPad-Byte | 1.969 ms |
-| decode-1MB-X#Base64UrlNoPad-Byte | 1.937 ms |
+| benchmark                            | duration |
+| ------------------------------------ | -------- |
+| encode-1MB-N#Base64UrlNoPad-Byte     | 451.6 μs |
+| encode-1MB-N#Base64UrlNoPad-ByteLazy | 451.6 μs |
+| encode-1MB-X#Base64UrlNoPad-Byte     | 479.5 μs |
+| encode-1MB-X#Base64UrlNoPad-ByteLazy | 452.0 μs |
+| decode-1MB-N#Base64UrlNoPad-Byte     | 1.939 ms |
+| decode-1MB-N#Base64UrlNoPad-ByteLazy | 1.936 ms |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 

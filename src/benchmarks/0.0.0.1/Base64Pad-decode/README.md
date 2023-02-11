@@ -5,18 +5,18 @@ This folder contains the decode benchmarks for the **Base64Pad** codec compiled 
 
 ## Key Results
 
-* decodes to 1,000,000 bytes in **1.889 ms** using the **ByteLazy** pipeline
+* decodes to 1,000,000 bytes in **1.893 ms** using the **ByteLazy** pipeline
 
 ## Results Summary
 
 | benchmark                      | duration |
 | ------------------------------ | -------- |
-| decode-1MB-Base64Pad-Text      | 1.919 ms |
-| decode-1MB-Base64Pad-TextLazy  | 1.918 ms |
-| decode-1MB-Base64Pad-TextShort | 1.945 ms |
-| decode-1MB-Base64Pad-Byte      | 1.892 ms |
-| decode-1MB-Base64Pad-ByteLazy  | 1.889 ms |
-| decode-1MB-Base64Pad-ByteShort | 1.944 ms |
+| decode-1MB-Base64Pad-Text      | 1.916 ms |
+| decode-1MB-Base64Pad-TextLazy  | 1.926 ms |
+| decode-1MB-Base64Pad-TextShort | 1.938 ms |
+| decode-1MB-Base64Pad-Byte      | 1.896 ms |
+| decode-1MB-Base64Pad-ByteLazy  | 1.893 ms |
+| decode-1MB-Base64Pad-ByteShort | 1.951 ms |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 

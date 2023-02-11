@@ -5,18 +5,18 @@ This folder contains the decode benchmarks for the **Base64UrlNoPad** codec comp
 
 ## Key Results
 
-* decodes to 1,000,000 bytes in **1.932 ms** using the **ByteLazy** pipeline
+* decodes to 1,000,000 bytes in **1.940 ms** using the **ByteLazy** pipeline
 
 ## Results Summary
 
 | benchmark                           | duration |
 | ----------------------------------- | -------- |
-| decode-1MB-Base64UrlNoPad-Text      | 1.926 ms |
-| decode-1MB-Base64UrlNoPad-TextLazy  | 2.012 ms |
-| decode-1MB-Base64UrlNoPad-TextShort | 1.976 ms |
-| decode-1MB-Base64UrlNoPad-Byte      | 1.888 ms |
-| decode-1MB-Base64UrlNoPad-ByteLazy  | 1.932 ms |
-| decode-1MB-Base64UrlNoPad-ByteShort | 1.978 ms |
+| decode-1MB-Base64UrlNoPad-Text      | 1.941 ms |
+| decode-1MB-Base64UrlNoPad-TextLazy  | 1.988 ms |
+| decode-1MB-Base64UrlNoPad-TextShort | 1.977 ms |
+| decode-1MB-Base64UrlNoPad-Byte      | 1.899 ms |
+| decode-1MB-Base64UrlNoPad-ByteLazy  | 1.940 ms |
+| decode-1MB-Base64UrlNoPad-ByteShort | 1.982 ms |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 

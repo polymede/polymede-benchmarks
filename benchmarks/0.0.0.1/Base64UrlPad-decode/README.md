@@ -5,18 +5,18 @@ This folder contains the decode benchmarks for the **Base64UrlPad** codec compil
 
 ## Key Results
 
-* decodes to 1,000,000 bytes in **1.888 ms** using the **ByteLazy** pipeline
+* decodes to 1,000,000 bytes in **1.901 ms** using the **ByteLazy** pipeline
 
 ## Results Summary
 
 | benchmark                         | duration |
 | --------------------------------- | -------- |
-| decode-1MB-Base64UrlPad-Text      | 1.935 ms |
-| decode-1MB-Base64UrlPad-TextLazy  | 1.942 ms |
-| decode-1MB-Base64UrlPad-TextShort | 1.957 ms |
-| decode-1MB-Base64UrlPad-Byte      | 1.893 ms |
-| decode-1MB-Base64UrlPad-ByteLazy  | 1.888 ms |
-| decode-1MB-Base64UrlPad-ByteShort | 1.950 ms |
+| decode-1MB-Base64UrlPad-Text      | 1.929 ms |
+| decode-1MB-Base64UrlPad-TextLazy  | 1.930 ms |
+| decode-1MB-Base64UrlPad-TextShort | 1.954 ms |
+| decode-1MB-Base64UrlPad-Byte      | 1.911 ms |
+| decode-1MB-Base64UrlPad-ByteLazy  | 1.901 ms |
+| decode-1MB-Base64UrlPad-ByteShort | 1.961 ms |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 

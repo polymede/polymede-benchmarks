@@ -9,10 +9,14 @@ This folder contains the Base64Pad misc benchmarks compiled with GHC 9.4.4 (aarc
 
 ## Results Summary
 
-| benchmark                   | duration |
-| --------------------------- | -------- |
-| decode-1MB-N#Base64Pad-Byte | 1.888 ms |
-| decode-1MB-X#Base64Pad-Byte | 1.889 ms |
+| benchmark                       | duration |
+| ------------------------------- | -------- |
+| encode-1MB-N#Base64Pad-Byte     | 451.6 μs |
+| encode-1MB-N#Base64Pad-ByteLazy | 451.4 μs |
+| encode-1MB-X#Base64Pad-Byte     | 479.4 μs |
+| encode-1MB-X#Base64Pad-ByteLazy | 451.7 μs |
+| decode-1MB-N#Base64Pad-Byte     | 1.893 ms |
+| decode-1MB-N#Base64Pad-ByteLazy | 1.892 ms |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 
