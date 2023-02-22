@@ -1,22 +1,17 @@
 # Base64Pad-decode
 
 This folder contains the decode benchmarks for the **Base64Pad** codec compiled with GHC 9.4.4 (aarch64), on the 
-**marvin** reference node running macOS 13.2 (22D49).
+**marvin** reference node running macOS 13.2.1 (22D68).
 
 ## Key Results
 
-* decodes to 1,000,000 bytes in **1.893 ms** using the **ByteLazy** pipeline
+* decodes to 25 bytes in **136.1 ns** using the **Byte** pipeline
 
 ## Results Summary
 
-| benchmark                      | duration |
-| ------------------------------ | -------- |
-| decode-1MB-Base64Pad-Text      | 1.916 ms |
-| decode-1MB-Base64Pad-TextLazy  | 1.926 ms |
-| decode-1MB-Base64Pad-TextShort | 1.938 ms |
-| decode-1MB-Base64Pad-Byte      | 1.896 ms |
-| decode-1MB-Base64Pad-ByteLazy  | 1.893 ms |
-| decode-1MB-Base64Pad-ByteShort | 1.951 ms |
+| benchmark                 | duration |
+| ------------------------- | -------- |
+| decode-25B-Base64Pad-Byte | 136.1 ns |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 
@@ -29,17 +24,7 @@ The following benchmarks are constrained to run inside the following bounds for 
 ## Notes
 
 The following observations concerning these results have been logged:
-
-### [Unreleased]
-
-#### Base64Pad-decode
-
-* _decode times appear to be somewhat greater than expected_ ([@cdornan], 2023-02-01)
-
-    This needs further investigation.
-
-[Unreleased]: <https://github.com/cdornan/polymede-benchmarks>
-[@cdornan]: <https://github.com/cdornan>
+* no notes have been attached to this codec/report
 
 [criterion.html](criterion.html)
 
