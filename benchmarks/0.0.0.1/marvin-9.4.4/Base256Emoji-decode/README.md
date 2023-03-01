@@ -11,7 +11,8 @@ This folder contains the decode benchmarks for the **Base256Emoji** codec compil
 
 | benchmark                      | duration |
 | ------------------------------ | -------- |
-| decode-0025B-Base256Emoji-Byte | 19.04 μs |
+| decode-0025B-Base256Emoji-Byte | 19.73 μs |
+| decode-010KB-Base256Emoji-Byte | 6.920 ms |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 

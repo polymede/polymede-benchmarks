@@ -11,8 +11,9 @@ This folder contains the decode benchmarks for the **Base64UrlPad** codec compil
 
 | benchmark                          | duration |
 | ---------------------------------- | -------- |
-| decode-0025B-Base64UrlPad-ByteLazy | 178.5 ns |
-| decode-001MB-Base64UrlPad-ByteLazy | 1.896 ms |
+| decode-0025B-Base64UrlPad-ByteLazy | 180.1 ns |
+| decode-010KB-Base64UrlPad-ByteLazy | 19.93 μs |
+| decode-001MB-Base64UrlPad-ByteLazy | 1.950 ms |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 

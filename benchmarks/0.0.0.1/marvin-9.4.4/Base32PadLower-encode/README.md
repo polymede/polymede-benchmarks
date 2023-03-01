@@ -11,8 +11,9 @@ This folder contains the encode benchmarks for the **Base32PadLower** codec comp
 
 | benchmark                            | duration |
 | ------------------------------------ | -------- |
-| encode-0025B-Base32PadLower-ByteLazy | 229.8 ns |
-| encode-001MB-Base32PadLower-ByteLazy | 4.450 ms |
+| encode-0025B-Base32PadLower-ByteLazy | 236.4 ns |
+| encode-010KB-Base32PadLower-ByteLazy | 38.02 μs |
+| encode-001MB-Base32PadLower-ByteLazy | 4.478 ms |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 

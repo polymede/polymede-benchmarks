@@ -11,8 +11,9 @@ This folder contains the encode benchmarks for the **Base32HexNoPadLower** codec
 
 | benchmark                                 | duration |
 | ----------------------------------------- | -------- |
-| encode-0025B-Base32HexNoPadLower-ByteLazy | 232.6 ns |
-| encode-001MB-Base32HexNoPadLower-ByteLazy | 5.506 ms |
+| encode-0025B-Base32HexNoPadLower-ByteLazy | 233.1 ns |
+| encode-010KB-Base32HexNoPadLower-ByteLazy | 47.76 μs |
+| encode-001MB-Base32HexNoPadLower-ByteLazy | 5.719 ms |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 

@@ -11,8 +11,9 @@ This folder contains the encode benchmarks for the **Base16Lower** codec compile
 
 | benchmark                         | duration |
 | --------------------------------- | -------- |
-| encode-0025B-Base16Lower-ByteLazy | 118.8 ns |
-| encode-001MB-Base16Lower-ByteLazy | 936.3 μs |
+| encode-0025B-Base16Lower-ByteLazy | 119.5 ns |
+| encode-010KB-Base16Lower-ByteLazy | 9.586 μs |
+| encode-001MB-Base16Lower-ByteLazy | 936.5 μs |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 

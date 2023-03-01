@@ -11,8 +11,9 @@ This folder contains the encode benchmarks for the **Base64Pad** codec compiled 
 
 | benchmark                       | duration |
 | ------------------------------- | -------- |
-| encode-0025B-Base64Pad-ByteLazy | 251.2 ns |
-| encode-001MB-Base64Pad-ByteLazy | 451.4 μs |
+| encode-0025B-Base64Pad-ByteLazy | 244.6 ns |
+| encode-010KB-Base64Pad-ByteLazy | 4.754 μs |
+| encode-001MB-Base64Pad-ByteLazy | 452.1 μs |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 
@@ -22,8 +23,8 @@ The following benchmarks are constrained to run inside the following bounds for 
 
 | benchmark                           | nodes      | current  | bound        |
 | ----------------------------------- | ---------- | -------- | ------------ |
-| **encode-001MB-Base64Pad-ByteLazy** | **marvin** | 451.4 μs | **485.0 μs** |
-| encode-001MB-Base64Pad-ByteLazy     | zaphod     | 451.4 μs | 352.0 μs     |
+| **encode-001MB-Base64Pad-ByteLazy** | **marvin** | 452.1 μs | **485.0 μs** |
+| encode-001MB-Base64Pad-ByteLazy     | zaphod     | 452.1 μs | 352.0 μs     |
 
 ## Notes
 

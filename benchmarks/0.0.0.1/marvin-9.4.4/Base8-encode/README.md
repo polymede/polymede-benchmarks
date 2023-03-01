@@ -11,7 +11,8 @@ This folder contains the encode benchmarks for the **Base8** codec compiled with
 
 | benchmark               | duration |
 | ----------------------- | -------- |
-| encode-0025B-Base8-Byte | 1.352 μs |
+| encode-0025B-Base8-Byte | 1.355 μs |
+| encode-010KB-Base8-Byte | 513.7 μs |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 

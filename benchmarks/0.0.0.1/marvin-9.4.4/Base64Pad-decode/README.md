@@ -11,8 +11,9 @@ This folder contains the decode benchmarks for the **Base64Pad** codec compiled 
 
 | benchmark                       | duration |
 | ------------------------------- | -------- |
-| decode-0025B-Base64Pad-ByteLazy | 178.2 ns |
-| decode-001MB-Base64Pad-ByteLazy | 1.898 ms |
+| decode-0025B-Base64Pad-ByteLazy | 176.7 ns |
+| decode-010KB-Base64Pad-ByteLazy | 19.08 μs |
+| decode-001MB-Base64Pad-ByteLazy | 1.901 ms |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 

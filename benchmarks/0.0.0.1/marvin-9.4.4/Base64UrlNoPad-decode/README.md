@@ -11,8 +11,9 @@ This folder contains the decode benchmarks for the **Base64UrlNoPad** codec comp
 
 | benchmark                            | duration |
 | ------------------------------------ | -------- |
-| decode-0025B-Base64UrlNoPad-ByteLazy | 208.1 ns |
-| decode-001MB-Base64UrlNoPad-ByteLazy | 1.978 ms |
+| decode-0025B-Base64UrlNoPad-ByteLazy | 209.0 ns |
+| decode-010KB-Base64UrlNoPad-ByteLazy | 19.96 μs |
+| decode-001MB-Base64UrlNoPad-ByteLazy | 1.955 ms |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 

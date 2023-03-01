@@ -11,7 +11,8 @@ This folder contains the decode benchmarks for the **IdentityBase** codec compil
 
 | benchmark                      | duration |
 | ------------------------------ | -------- |
-| decode-0025B-IdentityBase-Byte | 51.68 ns |
+| decode-0025B-IdentityBase-Byte | 51.29 ns |
+| decode-010KB-IdentityBase-Byte | 51.87 ns |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 

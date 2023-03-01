@@ -11,8 +11,9 @@ This folder contains the encode benchmarks for the **Base64UrlPad** codec compil
 
 | benchmark                          | duration |
 | ---------------------------------- | -------- |
-| encode-0025B-Base64UrlPad-ByteLazy | 251.3 ns |
-| encode-001MB-Base64UrlPad-ByteLazy | 451.2 μs |
+| encode-0025B-Base64UrlPad-ByteLazy | 257.3 ns |
+| encode-010KB-Base64UrlPad-ByteLazy | 4.786 μs |
+| encode-001MB-Base64UrlPad-ByteLazy | 454.2 μs |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 
@@ -22,8 +23,8 @@ The following benchmarks are constrained to run inside the following bounds for 
 
 | benchmark                              | nodes      | current  | bound        |
 | -------------------------------------- | ---------- | -------- | ------------ |
-| **encode-001MB-Base64UrlPad-ByteLazy** | **marvin** | 451.2 μs | **485.0 μs** |
-| encode-001MB-Base64UrlPad-ByteLazy     | zaphod     | 451.2 μs | 352.0 μs     |
+| **encode-001MB-Base64UrlPad-ByteLazy** | **marvin** | 454.2 μs | **485.0 μs** |
+| encode-001MB-Base64UrlPad-ByteLazy     | zaphod     | 454.2 μs | 352.0 μs     |
 
 ## Notes
 

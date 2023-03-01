@@ -11,8 +11,9 @@ This folder contains the decode benchmarks for the **Base32HexNoPadUpper** codec
 
 | benchmark                                 | duration |
 | ----------------------------------------- | -------- |
-| decode-0025B-Base32HexNoPadUpper-ByteLazy | 157.7 ns |
-| decode-001MB-Base32HexNoPadUpper-ByteLazy | 1.496 ms |
+| decode-0025B-Base32HexNoPadUpper-ByteLazy | 158.5 ns |
+| decode-010KB-Base32HexNoPadUpper-ByteLazy | 15.17 μs |
+| decode-001MB-Base32HexNoPadUpper-ByteLazy | 1.498 ms |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 

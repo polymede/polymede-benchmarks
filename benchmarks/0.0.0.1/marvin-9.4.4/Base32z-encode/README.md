@@ -11,7 +11,8 @@ This folder contains the encode benchmarks for the **Base32z** codec compiled wi
 
 | benchmark                 | duration |
 | ------------------------- | -------- |
-| encode-0025B-Base32z-Byte | 114.5 ns |
+| encode-0025B-Base32z-Byte | 115.8 ns |
+| encode-010KB-Base32z-Byte | 8.465 μs |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 

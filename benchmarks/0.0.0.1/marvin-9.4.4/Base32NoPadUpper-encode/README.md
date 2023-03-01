@@ -11,8 +11,9 @@ This folder contains the encode benchmarks for the **Base32NoPadUpper** codec co
 
 | benchmark                              | duration |
 | -------------------------------------- | -------- |
-| encode-0025B-Base32NoPadUpper-ByteLazy | 156.0 ns |
-| encode-001MB-Base32NoPadUpper-ByteLazy | 974.1 μs |
+| encode-0025B-Base32NoPadUpper-ByteLazy | 158.7 ns |
+| encode-010KB-Base32NoPadUpper-ByteLazy | 9.826 μs |
+| encode-001MB-Base32NoPadUpper-ByteLazy | 981.4 μs |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 

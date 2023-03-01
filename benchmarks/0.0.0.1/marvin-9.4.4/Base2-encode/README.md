@@ -11,7 +11,8 @@ This folder contains the encode benchmarks for the **Base2** codec compiled with
 
 | benchmark               | duration |
 | ----------------------- | -------- |
-| encode-0025B-Base2-Byte | 1.937 μs |
+| encode-0025B-Base2-Byte | 1.938 μs |
+| encode-010KB-Base2-Byte | 812.4 μs |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 

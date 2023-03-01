@@ -11,7 +11,8 @@ This folder contains the decode benchmarks for the **Base8** codec compiled with
 
 | benchmark               | duration |
 | ----------------------- | -------- |
-| decode-0025B-Base8-Byte | 10.06 μs |
+| decode-0025B-Base8-Byte | 10.55 μs |
+| decode-010KB-Base8-Byte | 3.993 ms |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 

@@ -11,8 +11,9 @@ This folder contains the encode benchmarks for the **Base64NoPad** codec compile
 
 | benchmark                         | duration |
 | --------------------------------- | -------- |
-| encode-0025B-Base64NoPad-ByteLazy | 345.5 ns |
-| encode-001MB-Base64NoPad-ByteLazy | 451.9 μs |
+| encode-0025B-Base64NoPad-ByteLazy | 348.6 ns |
+| encode-010KB-Base64NoPad-ByteLazy | 4.887 μs |
+| encode-001MB-Base64NoPad-ByteLazy | 459.3 μs |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 
@@ -22,8 +23,8 @@ The following benchmarks are constrained to run inside the following bounds for 
 
 | benchmark                             | nodes      | current  | bound        |
 | ------------------------------------- | ---------- | -------- | ------------ |
-| **encode-001MB-Base64NoPad-ByteLazy** | **marvin** | 451.9 μs | **485.0 μs** |
-| encode-001MB-Base64NoPad-ByteLazy     | zaphod     | 451.9 μs | 352.0 μs     |
+| **encode-001MB-Base64NoPad-ByteLazy** | **marvin** | 459.3 μs | **485.0 μs** |
+| encode-001MB-Base64NoPad-ByteLazy     | zaphod     | 459.3 μs | 352.0 μs     |
 
 ## Notes
 

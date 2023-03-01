@@ -12,7 +12,8 @@ This folder contains the decode benchmarks for the **Base16Upper** codec compile
 | benchmark                         | duration |
 | --------------------------------- | -------- |
 | decode-0025B-Base16Upper-ByteLazy | 127.1 ns |
-| decode-001MB-Base16Upper-ByteLazy | 1.246 ms |
+| decode-010KB-Base16Upper-ByteLazy | 12.64 μs |
+| decode-001MB-Base16Upper-ByteLazy | 1.250 ms |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 

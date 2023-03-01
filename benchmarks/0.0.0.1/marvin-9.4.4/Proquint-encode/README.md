@@ -11,7 +11,8 @@ This folder contains the encode benchmarks for the **Proquint** codec compiled w
 
 | benchmark                  | duration |
 | -------------------------- | -------- |
-| encode-0025B-Proquint-Byte | 1.456 μs |
+| encode-0025B-Proquint-Byte | 1.487 μs |
+| encode-010KB-Proquint-Byte | 707.8 μs |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 

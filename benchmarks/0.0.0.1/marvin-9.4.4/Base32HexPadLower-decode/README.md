@@ -11,8 +11,9 @@ This folder contains the decode benchmarks for the **Base32HexPadLower** codec c
 
 | benchmark                               | duration |
 | --------------------------------------- | -------- |
-| decode-0025B-Base32HexPadLower-ByteLazy | 157.9 ns |
-| decode-001MB-Base32HexPadLower-ByteLazy | 1.498 ms |
+| decode-0025B-Base32HexPadLower-ByteLazy | 161.6 ns |
+| decode-010KB-Base32HexPadLower-ByteLazy | 15.48 μs |
+| decode-001MB-Base32HexPadLower-ByteLazy | 1.520 ms |
 
 See [criterion.html](criterion.html) for the full breakdown with detailed methodological notes.
 
